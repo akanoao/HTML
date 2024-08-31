@@ -1,0 +1,145 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ea7e2f;/* #f4f4f4;*/
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+/* .work-with-me {
+    background-color: #1c3331;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+} */
+
+/* Main section */
+.intro {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #372a28;    /*#1c3331;*/
+    color: #dec8b6;
+}
+
+.intro .text {
+    max-width: 50%;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.portfolio-button {
+    background-color: #ea7e2f;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.portfolio-button span {
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.image-container {
+    position: relative;
+    max-width: 45%;
+}
+
+.image-box {
+    border: 10px solid #dec8b6;  /* #1c3331;*/
+    padding: 10px;
+    background-color: #9d3022;
+    
+}
+
+.image-box img {
+    display: block;
+    max-width: 100%;
+    
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #1c3331;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro .text, .image-container {
+        max-width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .image-container {
+        margin-top: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
